@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #edf0f3;
+  background-color: #45545c;
+}
+
+.navbar {
+  font-size: 1rem;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.navbar ul {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas:
+    "home home  facebook "
+    "galerie price  contact  ";
+  padding: 0;
+}
+
+.navbar li {
+  list-style-type: none;
+  margin: 10px;
+}
+
+.navbar li:first-child {
+  grid-area: home;
+}
+
+.navbar .navbar__galerie {
+  grid-area: galerie;
+}
+
+.navbar .navbar__price {
+  grid-area: price;
+  text-align: center;
+}
+
+.navbar .navbar__contact {
+  grid-area: contact;
+  justify-self: end;
+}
+
+.navbar .navbar__social-network {
+  grid-area: facebook;
+  justify-self: end;
+}
+
+.navbar a {
+  padding: 5px;
+  color: inherit;
+  border-radius: 5px;
+  max-width: 1024px;
+}
+
+.navbar a:hover {
+  background-color: #596469;
+  text-decoration: none;
+}
+
+.navbar .navbar__social-network a {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  max-width: 1024px;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar ul {
+    display: grid;
+    grid-template-columns: 1fr repeat(4, auto);
+    grid-template-areas: "home galerie price  contact  facebook ";
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar {
+    font-size: 1.2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+}
