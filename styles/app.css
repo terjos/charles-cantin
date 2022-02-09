@@ -2,6 +2,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  font-size: 14px;
   color: #edf0f3;
   background-color: #45545c;
 }
@@ -121,6 +122,42 @@ body {
   color: inherit;
 }
 
+.galerie {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+}
+
+.galerie__card img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.pricing {
+  margin: 0 15px;
+}
+
+.pricing h1 {
+  margin-bottom: 25px;
+}
+
+.pricing__prices {
+  margin: 0 15px 50px;
+}
+
+.pricing__prices h2 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin-bottom: 10px;
+}
+.pricing__prices h2 em {
+  font-size: 0.8rem;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .navbar ul {
@@ -147,19 +184,4 @@ body {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
-}
-
-.galerie {
-  --auto-grid-min-size: 16rem;
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fill,
-    minmax(var(--auto-grid-min-size), 1fr)
-  );
-  grid-gap: 1rem;
-}
-
-.galerie__card img {
-  width: 100%;
-  margin-bottom: 10px;
 }

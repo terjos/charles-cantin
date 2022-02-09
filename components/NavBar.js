@@ -14,8 +14,10 @@ const NavBar = () => (
       <li className="navbar__galerie">
         <a href="/galerie">galerie</a>
       </li>
-      <li className="navbar__price">
-        <a href="#">tarifs et prestations</a>
+      <li>
+        <a href="/tarifs-et-prestations" className="navbar__price">
+          tarifs et prestations
+        </a>
       </li>
       <li className="navbar__contact">
         <a href="#">Contact</a>
