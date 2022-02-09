@@ -67,11 +67,58 @@ body {
 }
 
 .container {
-  display: flex;
   margin: auto;
+  max-width: 1024px;
+}
+
+.home__logo {
+  display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1024px;
+}
+
+.galerie-title {
+  margin-left: 15px;
+}
+
+.galerie {
+  margin: 5px;
+}
+
+.galerie-add,
+.galerie-filter {
+  width: 100%;
+  text-align: center;
+}
+
+.galerie-add button {
+  width: 300px;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  outline: 0;
+  background-color: #1095c1;
+  color: inherit;
+}
+
+.galerie-add button:hover {
+  background-color: #1ab3e6;
+}
+
+.galerie-filter select {
+  width: 300px;
+  padding: 3px;
+  border: none;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  outline: 0;
+  background-color: #1095c1;
+  color: inherit;
+}
+
+.galerie-filter select option {
+  background-color: #596469;
+  color: inherit;
 }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -100,4 +147,19 @@ body {
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) {
+}
+
+.galerie {
+  --auto-grid-min-size: 16rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--auto-grid-min-size), 1fr)
+  );
+  grid-gap: 1rem;
+}
+
+.galerie__card img {
+  width: 100%;
+  margin-bottom: 10px;
 }

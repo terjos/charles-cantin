@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import logoFacebook from "../public/images/logo-facebook.svg";
 import logoInstagram from "../public/images/logo-instagram.svg";
 console.log("logoFacebook:", logoFacebook);
@@ -6,12 +7,12 @@ const NavBar = () => (
   <nav className="navbar">
     <ul>
       <li className="navbar__home">
-        <a href="#">
+        <a href="/">
           <strong>Accueil</strong>
         </a>
       </li>
       <li className="navbar__galerie">
-        <a href="#">galerie</a>
+        <a href="/galerie">galerie</a>
       </li>
       <li className="navbar__price">
         <a href="#">tarifs et prestations</a>

@@ -9,7 +9,7 @@ const Index = () => (
       <title>Accueil | Charles Cantin</title>
     </Head>
     <Layout>
-      <div>
+      <div className="home__logo">
         <Image src={logo} alt="logo Charles Cantin" width={800} height={800} />
       </div>
     </Layout>
