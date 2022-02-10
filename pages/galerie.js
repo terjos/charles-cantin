@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import { useState, useEffect } from "react";
-import Card from "../components/card";
+import Card from "../components/Card";
 
 const PICTURE_URL = "https://tj-charles-cantin.herokuapp.com/api/pictures";
 const PAGESIZE = 6;
