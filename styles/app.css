@@ -493,6 +493,76 @@ body {
   font-size: 0.8rem;
 }
 
+.contact {
+  margin: 15px;
+}
+
+.contact form {
+  width: 100%;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  max-width: 600px;
+  margin: 10px auto;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #45545c;
+}
+
+.contact input::placeholder {
+  color: #45545c;
+  opacity: 1;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  outline: #1095c1 solid 2px;
+  border-radius: 5px;
+}
+
+.contact textarea {
+  width: 100%;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  color: #45545c;
+}
+
+.contact-send {
+  width: 300px;
+  border: none;
+  margin: 15px;
+  border-radius: 5px;
+  outline: 0;
+  background-color: #1095c1;
+  color: inherit;
+}
+
+.contact-send:hover {
+  background-color: #1ab3e6;
+}
+
+.success {
+  width: 100%;
+  margin-top: 50px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .navbar ul {

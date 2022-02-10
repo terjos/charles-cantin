@@ -20,7 +20,7 @@ const NavBar = () => (
         </a>
       </li>
       <li className="navbar__contact">
-        <a href="#">Contact</a>
+        <a href="/contact">Contact</a>
       </li>
       <li className="navbar__social-network">
         <a href="#">
