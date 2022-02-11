@@ -17,9 +17,12 @@ export default function ContactForm() {
         placeholder="Votre email"
       />
 
-      <textarea name="message" id="yourmessage" rows="10">
-        Message
-      </textarea>
+      <textarea
+        name="message"
+        id="yourmessage"
+        rows="10"
+        defaultValue="Message"
+      ></textarea>
 
       <button type="submit" className="contact-send">
         Envoyer
