@@ -8,7 +8,7 @@ const Index = () => {
 
   useEffect(() => {
     setLoading(true);
-    fetch(`https://tj-charles-cantin.herokuapp.com/api/prices`)
+    fetch(`https://terjos-charles-cantin-serveur.onrender.com/api/prices`)
       .then((res) => res.json())
       .then((resData) => {
         setData(resData.data);
@@ -31,9 +31,7 @@ const Index = () => {
               <h2>
                 {price.attributes.title}
                 <em>
-                  {price.attributes.price
-                    ? " " + price.attributes.price + " euros"
-                    : " sur mesure"}
+                  {price.attributes.price ? " " + price.attributes.price + " euros" : " sur mesure"}
                 </em>
               </h2>
               <p>{price.attributes.description}</p>

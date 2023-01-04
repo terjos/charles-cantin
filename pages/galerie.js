@@ -3,7 +3,7 @@ import Layout from "../components/Layout";
 import { useState, useEffect } from "react";
 import Card from "../components/Card";
 
-const PICTURE_URL = "https://tj-charles-cantin.herokuapp.com/api/pictures";
+const PICTURE_URL = "https://terjos-charles-cantin-serveur.onrender.com/api/pictures";
 const PAGESIZE = 6;
 let nextPage = 1;
 let filter = "";
@@ -42,7 +42,7 @@ const Index = () => {
   useEffect(() => {
     fetchData();
 
-    fetch(`https://tj-charles-cantin.herokuapp.com/api/categories`)
+    fetch(`https://terjos-charles-cantin-serveur.onrender.com/api/categories`)
       .then((res) => res.json())
       .then((resData) => {
         setCategories(resData.data);
@@ -74,10 +74,7 @@ const Index = () => {
       <Layout>
         <h1 className="galerie-title">Galerie</h1>
         <div className="galerie-filter">
-          <select
-            onChange={handelCategoriesChange}
-            disabled={isCategoriesLoading}
-          >
+          <select onChange={handelCategoriesChange} disabled={isCategoriesLoading}>
             <option value="0" defaultValue>
               toute les catégories
             </option>
